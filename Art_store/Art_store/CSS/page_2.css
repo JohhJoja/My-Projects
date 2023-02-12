@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.m_d_y {
+    background: yellow;
+    color: #000;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 0;
+    width: 100vw;
+}
+
+.m_d_r {
+    /* background: red;
+    background: #ffaeae; */
+    /* color: #000;
+    color: #ff0000; */
+    /* background: #fffbfb;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 0;
+    width: 100vw; */
+}
+
+.m_s_y {
+    background: yellow;
+    color: #000;
+}
+
+.m_s_r {
+    background: red;
+    color: #000;
+}
+
+.menu_wrap_wrap {
+    padding: 20px 35px;
+}
+
+.header_2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header_2.m_d_r {
+    margin: 30px 0;
+    padding: 47px 0px;
+    /* text-indent: 40px; */
+    background: #ffd74a;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100vw;
+    font-size: 25px;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-delay: -12s;
+    animation-name: header_2;
+    /* animation-delay: -10s; */
+    /* animation-fill-mode: backwards; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+.header_2.m_d_r.two {
+    position: absolute;
+    width: 100vw;
+    font-size: 25px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    animation-delay: -8s;
+    animation-name: header_2;
+    top: -30px;
+    left: 100%;
+    z-index: 2;
+}
+
+.header_2.m_d_r.three {
+    position: absolute;
+    width: 100vw;
+    font-size: 25px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    animation-delay: -4s;
+    animation-name: header_2;
+    top: -30px;
+    left: 100%;
+    z-index: 2;
+}
+
+@keyframes header_2 {
+    0% {
+        left: 200%;
+        opacity: 1;
+    }
+
+    100% {
+        left: -100%;
+        opacity: 1;
+    }
+}
+
+.header_3 {
+    margin-top: 23px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+    background: #fffbfb;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 0;
+    width: 100vw;
+    border-bottom: 2px solid #efecec;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header_3:nth-child(2) {
+    margin-top: 0;
+}
+
+.sec_p_content {
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+}
+
+.img_name {
+    margin: 30px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content_img_wrapper {
+    display: flex;
+    gap: 1.33%;
+    margin-bottom: 15px;
+}
+
+.cintent_img_item {
+    flex: 1 1 30%;
+    padding: 0 0 30% 0;
+    position: relative;
+}
+
+.cintent_img_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* .x_line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100vw;
+    background: red;
+    z-index: 200;
+}
+
+.y_line {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100vh;
+    width: 2px;
+    background: red;
+    z-index: 200;
+} */
+
+.scrol {
+    width: 50px;
+    height: 91px;
+    background: url('../img/page_2/scrol.png') center/cover no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    transform: translateY(-50%);
+    z-index: 90;
+}
+
+.bg_image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    /* background: url('../img/bg_page_2.jpg'); */
+}
+
+.main {
+    overflow: hidden;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #664c1c orange;
+}
+
+.main .footer {
+    margin-top: 0;
+    background: #000;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 8px;
+    opacity: 0.01;
+}
+
+*::-webkit-scrollbar-track {
+    background: #664c1c;
+    opacity: 0.01;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffad16;
+    border-radius: 5px;
+    border: 4px solid #ffad16;
+    opacity: 0.01;
+}
+
+.circl_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 1px;
+    width: 0px;
+    height: 0px;
+    z-index: 100;
+    border-radius: 50%;
+    transform-origin: 0%;
+    background: rgba(255, 166, 0, 1);
+}
+
+.first_part {
+    height: 100vh;
+    background: #000;
+    position: relative;
+    z-index: 5;
+}
+
+.content_wrapper {}
+
+.menu_circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background: url('../img/page_2/menu.png') center/cover no-repeat;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-name: menu_circle;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.header {
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    font-family: 'Aboreto', cursive;
+}
+
+.header_text {
+    flex: 0 0 50%;
+    font-size: 23px;
+    color: #ffffff87;
+    position: relative;
+    left: 50%;
+    padding: 22px 0;
+    display: inline-block;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.header .menu_wrapper {
+    position: fixed;
+    box-sizing: border-box;
+    position: fixed;
+    top: -41px;
+    top: 55px;
+
+    left: 55px;
+
+    z-index: 100;
+    height: 90px;
+    width: 90px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+    transition-duration: 1s;
+    /* padding: 30px; */
+    /*  */
+    /* position: fixed;
+    top: -96px;
+    top: 0;
+    left: 0px;
+    z-index: 90;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0%;
+    background: white;
+    padding: 20px; */
+}
+
+.header_text::first-line {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+@keyframes menu_circle {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.gal_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.gal_text {
+    z-index: 50;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    padding: 0 50px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+.gal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img_item {
+    position: absolute;
+    width: 30%;
+    /* min-height: 200px;
+    max-height: 200px; */
+    /* min-width: 150px; */
+    max-width: 230px;
+    /* padding-bottom: 40%; */
+    background: url("../img/page_2/pr_gal/test.jpg") center/cover no-repeat;
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* opacity: 0; */
+}
+
+.img_item:nth-child(2) {
+    top: 4%;
+    left: 7%;
+    opacity: 1;
+    z-index: 5;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Bristol_Boxkite_1911.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(3) {
+    top: 8%;
+    left: 41%;
+    z-index: 6;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Loch_tay_crannog_02.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(4) {
+    top: 15%;
+    left: 62%;
+    z-index: 14;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Sagrada_Familia_01.jpg/1024px-Sagrada_Familia_01.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(5) {
+    top: 37%;
+    left: 5%;
+    z-index: 8;
+    background: url('https://thearchitecturedesigns.com/wp-content/uploads/2019/07/Organic-Architecture-1.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(6) {
+    top: 36%;
+    left: 36%;
+    z-index: 15;
+    width: 38%;
+    background: url('https://i.pinimg.com/originals/35/61/c5/3561c5abba79a80c0c3466b1c2deb893.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(7) {
+    top: 48%;
+    left: 68%;
+    z-index: 13;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Seagrambuilding.jpg/800px-Seagrambuilding.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(8) {
+    top: 63%;
+    left: 10%;
+    z-index: 14;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Image-Disney_Concert_Hall_by_Carol_Highsmith_edit.jpg/1024px-Image-Disney_Concert_Hall_by_Carol_Highsmith_edit.jpg') center/cover no-repeat;
+}
+
+.img_item:nth-child(9) {
+    top: 66%;
+    left: 46%;
+    z-index: 12;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Lloyd%27s_building_interior.jpg') center/cover no-repeat;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.second_part {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.second_part .menu_circle {
+    background: url('../img/page_2/menu_red.png') center/cover no-repeat;
+    z-index: 1;
+}
+
+.menu_wrap_wrap_ {
+    padding-left: 65px;
+    padding-top: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.menu_head {
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu_li {
+    font-size: 17px;
+    padding: 3px 0;
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu_lili:nth-child(2) {
+    margin-bottom: -20px;
+}
+
+.menu_lili {
+    font-size: 26px;
+    left: -30px;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu_lili:hover a {
+    color: red;
+}
+
+.menu_li:hover a {
+    color: red;
+}
+
+.menu_wrap_wrap_ a {
+    list-style: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    /* position: relative; */
+}
+
+.menu_wrap_wrap:last-of-type a {
+    padding: 20px;
+    list-style: none;
+    position: relative;
+    top: -80px;
+}
