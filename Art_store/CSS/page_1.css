@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg_image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f2321;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #664c1c;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffad16;
+    border-radius: 5px;
+    border: 4px solid #ffad16;
+}
+
+.header {
+    font-size: 50px;
+    padding: 30px 0;
+    text-align: center;
+    opacity: 0.9;
+    color: rgb(210 142 54);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1;
+    background: #364346;
+    position: relative;
+    z-index: 3;
+}
+
+
+/* body {
+    overflow: hidden;
+} */
+
+.header:nth-child(3) {
+    border-bottom: 2px solid #ffad16;
+}
+
+.header:nth-child(1) div {
+    position: relative;
+    left: -100%;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.51, .63, .65, 1.45);
+    /* cubic-bezier(.51, .63, .81, 1.43) */
+}
+
+.citata {
+    text-indent: 30px;
+    font-size: 30px;
+    padding: 10px 40px;
+    color: aliceblue;
+    position: relative;
+    z-index: 3;
+    background: #30453c;
+}
+
+.citata_author {
+    padding: 10px 40px;
+    text-align: right;
+    font-style: italic;
+}
+
+.galereia_wrapper {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    gap: 7px;
+    /* position: relative;
+    z-index: 1; */
+    background: #0f2321;
+    overflow: visible;
+}
+
+.gal_column {
+    position: relative;
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.img_wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: visible;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    overflow: hidden;
+}
+
+.big {
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    z-index: 10;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circl_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 1px;
+    width: 0px;
+    height: 0px;
+    z-index: 10;
+    border-radius: 50%;
+    transform-origin: 0%;
+    background: rgba(255, 166, 0, 1);
+}
