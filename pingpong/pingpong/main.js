@@ -17,17 +17,17 @@ let background_var = 0;
 document.addEventListener('keydown', (e) => {
     if (e.code == 'KeyW') {
         if (parseFloat(getComputedStyle(padL).top) > 0) {
-            padL.style.top = `${parseFloat(getComputedStyle(padL).top) - 10}px`;
+            padL.style.top = `${parseFloat(getComputedStyle(padL).top) - parseFloat(getComputedStyle(padL).height) / 5}px`;
         }
         if (parseFloat(getComputedStyle(padR).top) > 0) {
-            padR.style.top = `${parseFloat(getComputedStyle(padR).top) - 10}px`;
+            padR.style.top = `${parseFloat(getComputedStyle(padR).top) - parseFloat(getComputedStyle(padR).height) / 5}px`;
         }
     } else if (e.code == 'KeyS') {
         if (parseFloat(getComputedStyle(padL).top) < parseFloat(getComputedStyle(game).height) - 5 - parseFloat(getComputedStyle(padL).height)) {
-            padL.style.top = `${parseFloat(getComputedStyle(padL).top) + 10}px`;
+            padL.style.top = `${parseFloat(getComputedStyle(padL).top) + parseFloat(getComputedStyle(padL).height) / 5}px`;
         }
         if (parseFloat(getComputedStyle(padR).top) < parseFloat(getComputedStyle(game).height) - 5 - parseFloat(getComputedStyle(padR).height)) {
-            padR.style.top = `${parseFloat(getComputedStyle(padR).top) + 10}px`;
+            padR.style.top = `${parseFloat(getComputedStyle(padR).top) + parseFloat(getComputedStyle(padR).height) / 5}px`;
         }
     }
 
@@ -47,7 +47,9 @@ setInterval((bg_var) => {
 }, 2000, background_var);
 
 let speedX = 7 / 2;
+speedX = Mainwidth / 150;
 let speedY = 5 / 2;
+speedY = Mainwidth / 210;
 let i = 0;
 setInterval(() => {
     ball.style.height = ball.style.width = `${Mainwidth / 60}px`
@@ -56,13 +58,16 @@ setInterval(() => {
     text.innerHTML = `${i}`;
     if (parseFloat(parseFloat(getComputedStyle(ball).top)) <= 0) {
         speedY = -5 / 2 - i / 2;
+        speedY = -Mainwidth / 210 - i / 4;
     } else if (parseFloat(parseFloat(getComputedStyle(ball).top)) >= parseFloat(game.getBoundingClientRect().height) - parseFloat(ball.getBoundingClientRect().height * 2)) {
         speedY = 5 / 2 + i / 2;
+        speedY = Mainwidth / 210 + i / 4
     }
     ///////////////////// X 
     if (parseFloat(parseFloat(getComputedStyle(ball).left)) <= parseFloat(padL.getBoundingClientRect().width)) {
         if (parseFloat(getComputedStyle(padL).top) <= parseFloat(getComputedStyle(ball).top) && parseFloat(getComputedStyle(ball).top) <= parseFloat(getComputedStyle(padL).top) + parseFloat(getComputedStyle(padL).height)) {
             speedX = 7 / 2 + i / 2;
+            speedX = Mainwidth / 150 + i / 4;
             i++;
         } else {
             setTimeout(() => {
@@ -76,13 +81,16 @@ setInterval(() => {
                 ball.style.top = '50%';
                 ball.style.left = '50%';
                 speedX = 7 / 2 + i / 2;
+                speedX = Mainwidth / 150 + i / 4;
                 speedY = 5 / 2 + i / 2;
+                speedY = Mainwidth / 210 + i / 4
                 i = 0;
             }, 1000)
         }
     } else if (parseFloat(parseFloat(getComputedStyle(ball).left)) >= parseFloat(game.getBoundingClientRect().width) - parseFloat(ball.getBoundingClientRect().height * 1.5 + parseFloat(padL.getBoundingClientRect().width))) {
         if (parseFloat(getComputedStyle(padR).top) <= parseFloat(getComputedStyle(ball).top) && parseFloat(getComputedStyle(ball).top) <= parseFloat(getComputedStyle(padR).top) + parseFloat(getComputedStyle(padR).height)) {
             speedX = -7 / 2 - i / 2;
+            speedX = -Mainwidth / 150 - i / 4;
             i++;
 
         } else {
@@ -96,8 +104,10 @@ setInterval(() => {
             setTimeout(() => {
                 ball.style.top = '50%';
                 ball.style.left = '50%';
-                speedX = 7 / 2 + i / 2;
-                speedY = 5 / 2 + i / 2;
+                speedX = 7 / 2 + i / 4;
+                speedX = Mainwidth / 150 + i / 4;
+                speedY = 5 / 2 + i / 4;
+                speedY = Mainwidth / 210 + i / 4
                 i = 0;
             }, 1000)
         }
