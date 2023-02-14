@@ -1,0 +1,138 @@
+.projects_wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    transition-delay: 2s;
+    background: #9e9ea8;
+    background: url(main_gif.gif) center center/auto 100% no-repeat;
+    height: 100vh;
+}
+.project_title___{
+    width: 300px;
+    font-size: 40px;
+    text-align: center;
+    padding: 11px;
+    border-radius: 18px;
+    background: #311833;
+    color:#c6c6db;
+    letter-spacing: 1px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0.97;
+    z-index: 22;
+}
+.projects_projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.proj_noice{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    z-index: 6;
+    opacity: 0.15;
+}
+.block{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block_img{
+   position: absolute;
+   bottom: 0px;
+   left:0px;
+   width: 100%;
+   object-fit: cover;
+   z-index: 10;
+}
+.block_img_wrap{
+    position: relative;
+    width: 100%;
+    max-width: 685px;
+    transform: translateY(-20px);
+    animation: tydi_sudi 4s infinite alternate ease;
+}
+@keyframes tydi_sudi{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+.r_btn {
+    position: absolute;
+    top:52%;
+    left:93%;
+    width: 21%;
+    transition-duration: 0.3s;
+    z-index: 11;
+    object-fit: cover;
+}
+.l_btn {
+    position: absolute;
+    top:55%;
+    left:-10%;
+    width: 21%;
+    transition-duration: 0.3s;
+    z-index: 11;
+}
+.img_cont{
+    position: relative;
+    width: 58%;
+    height: 44%;
+    top:40%;
+    left:27%;
+}
+.targettt{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index: 40;
+}
+.imgg{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+}
+.imgg1{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+.podskazka{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 22px;
+    font-family: fantasy;
+    font-weight: 300;
+}
